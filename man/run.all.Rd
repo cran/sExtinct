@@ -8,11 +8,11 @@ Run all extinction estimators
 A function that runs all the sighting based extinction predictors within this package. The function can produce diagnostic plots (utilising the package lattice) and produce simple, and detailed data outputs. 
 }
 \usage{
-run.all(data, alpha, test.year, data.out, plot)
+run.all(sightingdata, alpha, test.year, data.out, plot)
 }
 
 \arguments{
-  \item{data}{
+  \item{sightingdata}{
 A data.frame with two columns, the first containing the year at which a sighting has (or as not) occured, the second a column of the number of sightings that have occured in each year. Column names are not restricted. Data msut be ranked from oldest at the top, to most recent at the bottom, and restricted to a single row per year. See \code{\link{example.data}} 
 }
   \item{alpha}{

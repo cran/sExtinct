@@ -11,6 +11,6 @@ function(dd, alpha, data.out){
 	Tn<-dd$yrs[length(dd$yrs)]-Tmin
 	res<-Tmin+(Tn+((1-alpha)/alpha)*(Tn-(Tn-1)))
 	if(data.out==T){
-		res<-data.frame(yrs=rev(res),sights=0, chance=rev(alpha))
+		res<-data.frame(yrs=rev(res), chance=rev(alpha))
 		return(res)}
 	else{return(res)}	}

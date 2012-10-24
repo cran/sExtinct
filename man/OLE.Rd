@@ -6,11 +6,11 @@
 A function that calculates the predcted date of extinction using the optimal lienar estimation technique proposed by Roberts and Solow (2003) and Solow (2005). Differs from other techniques in this package as it requires only data to produce a point estimate of the date of extinction (not dependant on 1-alpha CI), and uses alpha to calculate the upper and lower 1-alpha CI. 
 }
 \usage{
-OLE(data, alpha)
+OLE(sightingdata, alpha)
 }
 
 \arguments{
-  \item{data}{
+  \item{sightingdata}{
 A data.frame with two columns, the first containing the year at which a sighting has (or as not) occured, the second a column of the number of sightings that have occured in each year. Column names are not restricted. Data msut be ranked from oldest at the top, to most recent at the bottom, and restricted to a single row per year. See example.data. 
 }
   \item{alpha}{

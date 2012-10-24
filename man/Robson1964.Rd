@@ -8,12 +8,12 @@
 \description{
 Sighting based estimators of extinction that will calculate p values for persistance at each year after the last sighting event of a species. Unlike Burgman, Solow1993.eq2, Solow2005.eq7 these predictors do not need a test.year.}
 \usage{
-Robson1964(data, alpha, data.out)
-Strauss89(data, alpha, data.out)
+Robson1964(sightingdata, alpha, data.out)
+Strauss89(sightingdata, alpha, data.out)
 }
 
 \arguments{
-  \item{data}{
+  \item{sightingdata}{
 A data.frame with two columns, the first containing the year at which a sighting has (or as not) occured, the second a column of the number of sightings that have occured in each year. Column names are not restricted. Data msut be ranked from oldest at the top, to most recent at the bottom, and restricted to a single row per year. See example.data. 
 }
   \item{alpha}{

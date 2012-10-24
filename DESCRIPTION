@@ -2,7 +2,7 @@ Package: sExtinct
 Type: Package
 Title: Calculates the historic date of extinction given a series of
         sighting events
-Version: 1.0
+Version: 1.0.1
 Date: 2012-10-24
 Author: Christopher Clements
 Maintainer: Christopher Clements <c.clements@outlook.com>
@@ -13,6 +13,6 @@ Description: This package combines several sighting based estimators of
         from McPherson & Myers (2009).
 License: GPL-2
 Depends: graphics, grDevices, stats, utils, lattice
-Packaged: 2012-11-10 19:12:19 UTC; chrisclements
+Packaged: 2012-11-15 14:23:26 UTC; chrisclements
 Repository: CRAN
-Date/Publication: 2012-11-14 10:32:12
+Date/Publication: 2012-11-15 15:16:48

@@ -10,6 +10,6 @@ function (dd, alpha){
 		H<- length(dd$yrs)
 		B<- ((1-conf.level)^(-1/(H-1)) - 1)
 		rc<- B*R
-		res<-data.frame(yrs=rev((b + rc)),sights=0, chance=1-rev(conf.level))
+		res<-data.frame(yrs=rev((b + rc)),chance=1-rev(conf.level))
 		return(res)
  }

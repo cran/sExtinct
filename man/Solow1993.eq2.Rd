@@ -8,13 +8,13 @@
 A collection of functions requiring, in addition to the normal intermediate level inputs of data, alpha and data.out, a test.year value. The test.year (typically set as the current year) is the date that p values of persistance are calculated up to. 
 }
 \usage{
-Burgman(data, alpha, test.year, data.out)
-Solow1993.eq2(data, alpha, test.year, data.out)
-Solow2005.eq7(data, alpha, test.year, data.out)
+Burgman(sightingdata, alpha, test.year, data.out)
+Solow1993.eq2(sightingdata, alpha, test.year, data.out)
+Solow2005.eq7(sightingdata, alpha, test.year, data.out)
 }
 
 \arguments{
-  \item{data}{
+  \item{sightingdata}{
 A data.frame with two columns, the first containing the year at which a sighting has (or as not) occured, the second a column of the number of sightings that have occured in each year. Can be gaps in the data (which are filled in by the function as 0 sightings within that year). Column names are not restricted. Data must be ranked from oldest at the top, to most recent at the bottom, and restricted to a single row per year. See example.data. 
 }
   \item{alpha}{

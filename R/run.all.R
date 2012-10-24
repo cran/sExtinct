@@ -1,13 +1,13 @@
 run.all <-
-function(data, alpha, test.year, data.out, plot){
-	O<-OLE(data, alpha)
-	Strauss<-Strauss89(data, alpha, data.out)
-	sol1<-Solow1993.eq2(data, alpha, test.year, data.out)
-	sol2<-Solow2005.eq7(data, alpha, test.year, data.out)
-	Burgmanres<-Burgman(data, alpha, test.year, data.out)
-	Robson<-Robson1964(data, alpha, data.out)
+function(sightingdata, alpha, test.year, data.out, plot){
+	O<-OLE(sightingdata, alpha)
+	Strauss<-Strauss89(sightingdata, alpha, data.out)
+	sol1<-Solow1993.eq2(sightingdata, alpha, test.year, data.out)
+	sol2<-Solow2005.eq7(sightingdata, alpha, test.year, data.out)
+	Burgmanres<-Burgman(sightingdata, alpha, test.year, data.out)
+	Robson<-Robson1964(sightingdata, alpha, data.out)
 
-	if(data.out==FALSE){
+	if(data.out==F){
 		k=6
 		results<-data.frame(Test=character(length=k),
 						Estimate=numeric(length=k))
@@ -28,16 +28,15 @@ function(data, alpha, test.year, data.out, plot){
 		Burgmanres$code<-"Burgman"
 		Strauss$code<-"Strauss"
 		Robson$code<-"Robson"
-		results<-rbind(sol1, sol2, Burgmanres, Strauss, Robson)
-		results<-results[,c(1,3,4)]		
+		results<-rbind(sol1, sol2, Burgmanres, Strauss, Robson)	
 		}
 		if(plot==T){
-		O<-OLE(data, alpha)
-		Strauss<-Strauss89(data, alpha, data.out=T)
-		Robson<-Robson1964(data, alpha, T)
-		sol1.p<-Solow1993.eq2(data, alpha, test.year, T)
-		sol2.p<-Solow2005.eq7(data, alpha, test.year, T)
-		Burgmanres.p<-Burgman(data, alpha, test.year, T) 
+		O<-OLE(sightingdata, alpha)
+		Strauss<-Strauss89(sightingdata, alpha, data.out=T)
+		Robson<-Robson1964(sightingdata, alpha, T)
+		sol1.p<-Solow1993.eq2(sightingdata, alpha, test.year, T)
+		sol2.p<-Solow2005.eq7(sightingdata, alpha, test.year, T)
+		Burgmanres.p<-Burgman(sightingdata, alpha, test.year, T) 
 		sol1.p$code<-"Solow1993.eq2"
 		sol2.p$code<-"Solow2005.eq7"
 		Burgmanres.p$code<-"Burgman"

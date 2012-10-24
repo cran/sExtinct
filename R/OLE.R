@@ -1,4 +1,4 @@
 OLE <-
-function(data, alpha){
-	OLE.fun(data, alpha)
+function(sightingdata, alpha){
+	OLE.fun(sightingdata, alpha)
 		}
