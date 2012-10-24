@@ -1,0 +1,2 @@
+exportPattern("^[[:alpha:]]+")
+import(graphics, grDevices, stats, utils, lattice)
