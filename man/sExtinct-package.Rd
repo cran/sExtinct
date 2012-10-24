@@ -10,7 +10,7 @@ sExtinct combines several sighting based estimators of historical extinction.
 \tabular{ll}{
 Package: \tab sExtinct\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 1.1\cr
 Date: \tab 2012-10-25\cr
 License: \tab GPL-2 | GPL-3\cr
 }

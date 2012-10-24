@@ -1,5 +1,12 @@
 run.all <-
 function(sightingdata, alpha, test.year, data.out, plot){
+
+##some warnings
+
+   if(!is.logical(plot)) 
+   		stop('plot must be logical', call.=FALSE)
+   
+   ##the functions
 	O<-OLE(sightingdata, alpha)
 	Strauss<-Strauss89(sightingdata, alpha, data.out)
 	sol1<-Solow1993.eq2(sightingdata, alpha, test.year, data.out)

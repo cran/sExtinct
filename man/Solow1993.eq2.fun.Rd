@@ -30,7 +30,9 @@ Christopher Clements
 }
 
 \examples{
-example.data.for.simple.functions<-data.frame("years"=c(1950:2012), sightings=c(1,0,3,4,0,1,0,1,(c(rep(0, 55)))))
+years <- c(1950:2012)
+sightings <- c(1,0,3,4,0,1,0,1,(c(rep(0, 55))))
+example.data.for.simple.functions<-data.frame(years, sightings)
 
 Solow2005.eq7.fun(example.data.for.simple.functions)
 }
